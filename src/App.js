@@ -37,7 +37,7 @@ function App() {
       <Router>
         <ScrollToTop>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/baghii-website" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
           </Routes>
