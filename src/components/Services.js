@@ -34,9 +34,9 @@ const Services = () => {
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
                                 <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img2} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center">Mobile App Development</h2>
+                                    <h2 className="font-semibold my-4 text-2xl text-center">Video Editing</h2>
                                     <p className="text-md font-medium">
-                                        We develop high-quality, custom cross-platform mobile applications that are robust and optimized for performance, scalability, and accessibility.
+                                        We provide professional video editing services tailored to your vision. Our skilled editors transform raw footage into polished, engaging content, ensuring high-quality results that captivate your audience and meet your specific needs.
                                     </p>
                                 </div>
                             </div>
@@ -44,9 +44,9 @@ const Services = () => {
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
                                     <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img3} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center ">Domain and Hosting Services</h2>
+                                    <h2 className="font-semibold my-4 text-2xl text-center ">3D Modelling Custom Parts</h2>
                                     <p className="text-md font-medium">
-                                        We provide domain registration and web hosting services to individuals and organizations to enable them gain visibility in the digital space.
+                                        We specialize in crafting precise and detailed 3D models for custom parts. Our advanced techniques ensure accuracy, scalability, and adaptability, providing you with high-quality models that meet your exact specifications.
                                     </p>
                                 </div>
                             </div>
@@ -54,9 +54,9 @@ const Services = () => {
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
                                 <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img4} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center ">General IT Consultations</h2>
+                                    <h2 className="font-semibold my-4 text-2xl text-center ">3D Printing Custom Parts</h2>
                                     <p className="text-md font-medium">
-                                        Our IT consultations service provides expert guidance and support for businesses and individuals looking to optimize their technology solutions.
+                                        We offer high-quality 3D printing services for custom parts, delivering precision and durability. Our state-of-the-art technology ensures that every part meets your exact specifications, providing reliable and efficient solutions for your unique needs.
                                     </p>
                                 </div>
                             </div>                    
@@ -75,7 +75,7 @@ const Services = () => {
                             font-bold">We <span className='font-black'>Build</span></h3>
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold'>
-                                    With over 10 years experience in software analysis and design and a deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
+                                    With years experience in software analysis and design and a deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
                                 </p>
                             </div>
                         </div>

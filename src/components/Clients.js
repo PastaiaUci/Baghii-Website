@@ -1,7 +1,7 @@
 import React from 'react';
-import kws from '../images/clients/kws.png';
-import geps from '../images/clients/geps.png';
-import protergia from '../images/clients/protergia.png';
+import Crina from '../images/clients/Crina.png';
+import BGHOnlyFans from '../images/clients/BGHOnlyFans.png';
+import Inosuke from '../images/clients/Inosuke.png';
 
 const clientImage = {
     height: '10rem',
@@ -21,21 +21,37 @@ const Clients = () => {
                         <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-blue-900">Some of our clients.</h2>
                     </div>
 
-                <div className="p-16" data-aos="fade-in" data-aos-delay="600">
-                    <div className="grid sm:grid-cols-3 lg:grid-cols-3">
-                        <div style={clientImage} className= "overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6">
-                            <img src={kws} alt="client" />                           
+                    <div className="-mt-4 p-16" data-aos="fade-in" data-aos-delay="600">
+                    <div className="grid sm:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <div className="flex flex-col items-center">  
+                            <div style={clientImage} className="overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6">
+                                <img src={Crina} alt="client" />
+                            </div>
+                            <div className="mt-4 text-center">  
+                                <p className="text-gray-700 italic">"Thanks to their amazing video editing services, my TikToks have never looked better! Their creativity and attention to detail helped me gain over 3,000 followers in no time. Highly recommend!"</p>  
+                                <span className="block mt-2 text-sm text-gray-500">- Cretu Crina</span>
+                            </div>
                         </div>
 
-                        <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={protergia} alt="client" />                            
-                        </div> 
-
-                        <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={geps} alt="client" />                            
+                        <div className="flex flex-col items-center">
+                            <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
+                                <img src={Inosuke} alt="client" />
+                            </div>
+                            <div className="mt-4 text-center">
+                                <p className="text-gray-700 italic">"I couldn't be happier with my Inosuke swords! The craftsmanship is incredible, and they complete my cosplay perfectly. These swords are exactly what I needed to bring my character to life!"</p>
+                                <span className="block mt-2 text-sm text-gray-500">- Luca David</span>
+                            </div>
                         </div>
 
-                                           
+                        <div className="flex flex-col items-center">
+                            <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
+                                <img src={BGHOnlyFans} alt="client" />
+                            </div>
+                            <div className="mt-4 text-center">
+                                <p className="text-gray-700 italic">"Our new website has transformed our business! It's sleek, easy to navigate, and has significantly increased our online sales. The team's expertise and dedication really show in every detail. We couldn't be more pleased!"</p>
+                                <span className="block mt-2 text-sm text-gray-500">- BGHOnlyFans</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

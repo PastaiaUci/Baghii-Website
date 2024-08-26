@@ -11,6 +11,7 @@ import {
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
+import AboutUs from './pages/AboutUs';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -30,7 +31,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("MLD | Molad e Konsult - Bespoke Web and Mobile Applications");
+  useDocTitle("Baghii | Services from personal to industrial needs!");
 
   return (
     <>
@@ -39,7 +40,8 @@ function App() {
           <Routes>
             <Route path="/baghii-website" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/get-demo" element={<DemoProduct />} /> 
+            <Route path="/get-demo" element={<DemoProduct />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </ScrollToTop>
       </Router>
