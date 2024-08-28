@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
 import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -39,10 +40,12 @@ function App() {
       <Router>
         <ScrollToTop>
           <Routes>
-            <Route path="/about" element={<AboutUs />} />
+            
             {/* For deplyoyment on GH Pages use this + add on package.json this: "homepage": "https://pastaiauci.github.io/baghii-website", */}
-            <Route path="/baghii-website" element={<Home />} />
-            {/* <Route path="/" element={<Home />} /> */}
+            {/* <Route path="/baghii-website" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} />
           </Routes>
