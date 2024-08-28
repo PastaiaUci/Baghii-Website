@@ -7,7 +7,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-// All pages
+
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
@@ -18,6 +18,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   useEffect(() => {
+    
     const aos_init = () => {
       AOS.init({
         once: true,
@@ -38,10 +39,12 @@ function App() {
       <Router>
         <ScrollToTop>
           <Routes>
+            <Route path="/about" element={<AboutUs />} />
+            {/* For deplyoyment on GH Pages use this + add on package.json this: "homepage": "https://pastaiauci.github.io/baghii-website", */}
             <Route path="/baghii-website" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} />
-            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </ScrollToTop>
       </Router>
