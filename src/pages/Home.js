@@ -5,8 +5,6 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
-import Services from '../components/ServicesContent';
-
 
 const Home = () => {
     
@@ -14,7 +12,6 @@ const Home = () => {
         <>
             <Hero />
             <Intro />
-            <Services />
             <Portfolio />
             <Clients />
             <Cta/>
