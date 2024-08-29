@@ -1,19 +1,19 @@
 import React from 'react';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
-import Services from '../components/ServicesContent';
 import { useDocTitle } from '../components/CustomHook';
+import Team from '../components/OurTeamContent';
 
-const Service = () => {
-    useDocTitle('Baghii | Services');
+const About = () => {
+    useDocTitle('Baghii | Our Team');
 
     return (
         <>
             <NavBar />
-            <Services />
+            <Team />
             <Footer />
         </>
     );
 }
 
-export default Service;
+export default About;
