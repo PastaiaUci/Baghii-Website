@@ -40,10 +40,10 @@ const teamMembers = [
 
 const Team = () => {
     return (
-        <div className="bg-gray-100 py-16 px-8 relative">
+        <div className="bg-gray-100 py-16 px-8 relative" data-aos="fade-up">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl font-bold text-blue-900 mb-4 mt-[90px]">Our Team</h2>
-                <p className="text-lg text-gray-600 mb-12">
+                <h2 className="text-4xl font-bold text-blue-900 mb-4 mt-[90px]" data-aos="fade-down">Our Team</h2>
+                <p className="text-lg text-gray-600 mb-12" data-aos="fade-down" data-aos-delay="100">
                     Our endorsement means nothing unless you get to know who and how amazing we and our craft are.<br/>
                     Our team of experts is dedicated to delivering excellence across various fields, ensuring every project is completed with precision and innovation.
                 </p>
@@ -70,6 +70,7 @@ const Team = () => {
                             spaceBetween: 30,
                         },
                     }}
+                    data-aos-delay="200"
                 >
                     {teamMembers.map((member, index) => (
                         <SwiperSlide key={index}>
@@ -82,7 +83,7 @@ const Team = () => {
                                     />
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-800">{member.name}</h3>
-                                <p className="text-green-600 font-semibold">{member.position}</p>
+                                <p className="text-blue-900 font-semibold">{member.position}</p>
                                 <p className="text-gray-600 mt-4">{member.testimonial}</p>
                             </div>
                         </SwiperSlide>
