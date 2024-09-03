@@ -26,3 +26,53 @@
 .swiper-button-prev {
     left: 15%;
 }
+
+/* Video Editing Page */
+
+.video-editing-container {
+    margin-top: 110px;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-editing-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e3a8a; /* Adjusted color */
+}
+
+.video-editing-subtitle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e3a8a; /* Adjusted color */
+}
+
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+    top: 50%; /* Adjust this value to move the arrows up or down */
+    transform: translateY(-50%);
+    color: #4a56e2; /* Adjust arrow color */
+}
+
+.video-container {
+    text-align: center;
+    margin-top:5%;
+}
+
+.video-frame {
+    width: 100%;
+    height: auto;
+    max-width: 768px; /* Adjust max-width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}

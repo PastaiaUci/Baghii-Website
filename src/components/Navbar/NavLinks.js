@@ -13,7 +13,7 @@ const NavLinks = () => {
             <Link className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/our-team">
                 Our Team
             </Link>
-            <Link className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/">
+            <Link className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/portofolio">
                 Portfolio
             </Link>
             <Link className="px-4 font-extrabold text-gray-500 hover:text-blue-900" to="/contact">

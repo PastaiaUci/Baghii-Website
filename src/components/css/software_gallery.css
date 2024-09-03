@@ -1,0 +1,65 @@
+.container {
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1140px;
+    margin-top:3%;
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 45px;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #424242;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex: 7;
+}
+
+.item-1 {
+    background-image: url('../../images/team/david.png');
+}
+
+.item-2 {
+    background-image: url('../../images/team/bogdan.png');
+}
+
+.item-3 {
+    background-image: url('../../images/team/fos.png');
+}
+
+.item-4 {
+    background-image: url('../../images/team/miganu.png');
+}
+
+.item-5 {
+    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+}
+
+.social {
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+}
+
+.social img {
+    display: block;
+    width: 32px;
+}
