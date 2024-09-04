@@ -1,102 +1,116 @@
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Add space between images */
-    padding: 20px; /* Adjust padding to ensure images are not too close to the edge */
-    margin-top: 6%;
-  }
-  
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  
+.gallery-printing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add space between images */
+  padding: 20px; /* Adjust padding to ensure images are not too close to the edge */
+  margin-top: 6%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.clipped-border {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  padding: 5px;
+  background: linear-gradient(grey, lightgrey);
+  width: 250px; /* Adjust size as needed */
+  height: 250px; /* Adjust size as needed */
+  transition: transform 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Ensure that any overflow is hidden */
+}
+
+.clipped-border:before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  width: 350px;
+  height: 70px;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.clipped-border:hover:before {
+  transform: translate(-100px, 400%) rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.clipped-border:hover {
+  transform: scale(1.1); /* Slightly smaller scale for a more subtle effect */
+  transition: transform 0.2s;
+  z-index: 10;
+}
+
+#clipped {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+@media screen and (max-width: 500px) {
   .clipped-border {
-    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    padding: 5px;
-    background: linear-gradient(grey, lightgrey);
-    width: 250px; /* Adjust size as needed */
-    height: 250px; /* Adjust size as needed */
-    transition: transform 0.2s;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden; /* Ensure that any overflow is hidden */
+    width: 100px;
+    height: 100px;
   }
-  
-  .clipped-border:before {
-    content: '';
-    position: absolute;
-    opacity: 0.5;
-    width: 350px;
-    height: 70px;
-    background: white;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transform: rotate(45deg);
-    transition: transform 0.5s;
-  }
-  
-  .clipped-border:hover:before {
-    transform: translate(-100px, 400%) rotate(45deg);
-    transition: transform 0.5s;
-  }
-  
-  .clipped-border:hover {
-    transform: scale(1.1); /* Slightly smaller scale for a more subtle effect */
-    transition: transform 0.2s;
-    z-index: 10;
-  }
-  
-  #clipped {
-    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  }
-  
-  @media screen and (max-width: 500px) {
-    .clipped-border {
-      width: 100px;
-      height: 100px;
-    }
-  }
-  
-  .printing-page-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 10%;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-4xl {
-    font-size: 2.25rem; /* Adjust the size as needed */
-  }
-  
-  .font-bold {
-    font-weight: 700;
-  }
-  
-  .text-blue-900 {
-    color: #1e3a8a;
-  }
-  
-  .text-lg {
-    font-size: 1.125rem; /* Adjust the size as needed */
-  }
-  
-  .text-gray-700 {
-    color: #4a5568;
-  }
-  
-  .mb-8 {
-    margin-bottom: 2rem;
-  }
-  
-  .mt-2 {
-    margin-top: 0.5rem;
-  }
+}
+
+.printing-page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem; /* Adjust the size as needed */
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-blue-900 {
+  color: #1e3a8a;
+}
+
+.text-lg {
+  font-size: 1.125rem; /* Adjust the size as needed */
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}

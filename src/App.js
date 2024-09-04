@@ -42,8 +42,8 @@ function App() {
         <ScrollToTop>
           <Routes>
             {/* For deplyoyment on GH Pages use this + add on package.json this: "homepage": "https://pastaiauci.github.io/baghii-website", */}
-            <Route path="/baghii-website" element={<Home />} />
-            {/* <Route path="/" element={<Home />} /> */}
+            {/* <Route path="/baghii-website" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/our-team" element={<OurTeam />} />
