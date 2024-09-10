@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import DemoProduct from "./pages/DemoProduct";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import OurTeam from "./pages/OurTeam";
 import Portofolio from "./pages/Portofolio";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import VideoEditingPage from "./components/Portofolio/VideoEditingPage";
 import PrintingPage from "./components/Portofolio/PrintingPage";
 import SoftwarePage from "./components/Portofolio/SoftwarePage";
@@ -57,7 +57,10 @@ function App() {
               element={<SoftwarePage />}
             />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/get-demo" element={<DemoProduct />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditions />}
+            />
           </Routes>
         </ScrollToTop>
       </Router>
