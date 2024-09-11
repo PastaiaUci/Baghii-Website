@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import OurTeam from "./pages/OurTeam";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Portofolio from "./pages/Portofolio";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import VideoEditingPage from "./components/Portofolio/VideoEditingPage";
@@ -61,6 +62,7 @@ function App() {
               path="/terms-and-conditions"
               element={<TermsAndConditions />}
             />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </ScrollToTop>
       </Router>

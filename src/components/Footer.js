@@ -225,18 +225,10 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <Link
-                    to="/politica-confidentialitate"
+                    to="/privacy-policy"
                     className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
-                    Politica de confidențialitate
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/politica-expediere"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
-                  >
-                    Politica de expediere
+                    Privacy Policy
                   </Link>
                 </li>
                 <li className="mb-2">
