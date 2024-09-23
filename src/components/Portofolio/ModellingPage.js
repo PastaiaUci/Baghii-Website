@@ -1,48 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import NavBar from '../../components/Navbar/NavBar';
-import Footer from '../../components/Footer';
-import ScrollToTop from '../../components/ScrollToTop';
-import Modal from './Modal'; 
-import '../../components/css/modelling_gallery.css';  // Import the CSS here
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import NavBar from "../../components/Navbar/NavBar";
+import Footer from "../../components/Footer";
+import ScrollToTop from "../../components/ScrollToTop";
+import Modal from "./Modal";
+import "../../components/css/modelling_gallery.css";
 
-import stl1 from '../../stls/Blade_tip.stl';
-import stl2 from '../../stls/Hilt1.stl';
+import Silencer from "../../stls/silencer.stl";
+import Bayonet from "../../stls/bayonet.stl";
+import FMS from "../../stls/fms.stl";
+import InosukeSwords from "../../stls/inosuke_swords.stl";
 
-import David from '../../images/team/david.png';
-import Bogdan from '../../images/team/bogdan.png';
-import Fos from '../../images/team/fos.png';
-import Miganu from '../../images/team/miganu.png';
+import SilencerImg from "../../images/prints/Silencer1.jpeg";
+import BayonetImg from "../../images/prints/Bayonet.jpeg";
+import InosukeSowrdsImg from "../../images/prints/InosukeSword3.png";
+import FmsImg from "../../images/prints/fms1.jpeg";
 
 const images = [
   {
-    href: "https://unsplash.com/@jeka_fe",
-    src:David,
-    alt: "Portrait by Jessica Felicio",
-    caption: "Portrait by Jessica Felicio",
-    stlPath: stl1
+    src: SilencerImg,
+    alt: "Pistol Silencer",
+    caption: "Silencer for an airsoft gun",
+    stlPath: Silencer,
   },
   {
-    href: "https://unsplash.com/@jeka_fe",
-    src: Fos,
-    caption: "Portrait by Jessica Felicio",
-    stlPath: stl2
+    src: BayonetImg,
+    alt: "M9 Bayonet",
+    caption: "M9|Bayonet from CS2",
+    stlPath: Bayonet,
   },
   {
-    href: "https://unsplash.com/@jeka_fe",
-    src: Bogdan,
-    alt: "Portrait by Jessica Felicio",
-    caption: "Portrait by Jessica Felicio",
-    stlPath: stl2
+    src: InosukeSowrdsImg,
+    alt: "Inosuke Swords",
+    caption: "Swords of the Inosuke character",
+    stlPath: InosukeSwords,
   },
   {
-    href: "https://unsplash.com/@jeka_fe",
-    src: Miganu,
-    alt: "Portrait by Jessica Felicio",
-    caption: "Portrait by Jessica Felicio",
-    stlPath: stl2
-  }
+    src: FmsImg,
+    alt: "Full Moon Sword",
+    caption: "FMS from Metin2 online Game",
+    stlPath: FMS,
+  },
 ];
 
 const PrintingPage = () => {
@@ -68,9 +67,12 @@ const PrintingPage = () => {
       <NavBar />
       <div className="printing-page-container">
         <div className="text-center mb-8" data-aos="fade-up">
-          <h1 className="text-4xl font-bold text-blue-900">Our Printed Products</h1>
+          <h1 className="text-4xl font-bold text-blue-900">
+            Our Printed Products
+          </h1>
           <p className="text-lg text-gray-700 mt-2">
-            Discover how amazing our printed products are and how they can elevate your brand.
+            Discover how amazing our printed products are and how they can
+            elevate your brand.
           </p>
         </div>
         <div className="gallery" data-aos="fade-up" data-aos-delay="200">
@@ -87,10 +89,14 @@ const PrintingPage = () => {
               }}
             >
               <figure className="gallery__thumb">
-                <img src={image.src} alt={image.alt} className="gallery__image" />
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="gallery__image"
+                />
                 <figcaption className="gallery__caption">
-                    <p className="caption-title">{image.alt}</p>
-                    <p className="caption-description">{image.caption}</p>
+                  <p className="caption-title">{image.alt}</p>
+                  <p className="caption-description">{image.caption}</p>
                 </figcaption>
               </figure>
             </a>
@@ -98,7 +104,11 @@ const PrintingPage = () => {
         </div>
       </div>
       <Footer />
-      <Modal isOpen={isModalOpen} onClose={closeModal} stlPath={currentStlPath} />
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        stlPath={currentStlPath}
+      />
     </ScrollToTop>
   );
 };
